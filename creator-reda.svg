@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait placeholder Reda Zegzouti</title>
+  <desc id="desc">Visual placeholder for the multimedia and animation profile card.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b1208"/>
+      <stop offset="55%" stop-color="#110f0d"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="70%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#ff8b18" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#ff8b18" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <circle cx="670" cy="260" r="280" fill="url(#glow)"/>
+  <rect x="120" y="140" width="660" height="920" rx="40" fill="none" stroke="#ffb15c" stroke-opacity="0.25"/>
+  <text x="450" y="520" text-anchor="middle" fill="#ffe7ca" font-size="220" font-family="Space Grotesk, Arial, sans-serif" letter-spacing="8">RZ</text>
+  <text x="450" y="655" text-anchor="middle" fill="#ffc37a" font-size="42" font-family="Arial, sans-serif" letter-spacing="6">REDA ZEGZOUTI</text>
+  <text x="450" y="718" text-anchor="middle" fill="#f7f1ea" font-size="29" font-family="Arial, sans-serif" letter-spacing="4">ANIMATION · MULTIMEDIA · DEVELOPPEMENT</text>
+</svg>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulateur Budget | Paloma Animation</title>
+  <meta
+    name="description"
+    content="Simulez le budget de votre evenement avec Paloma Animation, obtenez une estimation rapide et contactez l'equipe."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html" aria-label="Paloma Roja accueil">
+          <div class="brand-mark">
+            <img src="logo.png" alt="Logo Paloma Roja" data-logo-image />
+          </div>
+          <div class="brand-text">
+            <strong>Paloma Roja</strong>
+            <span>Percussion & Animation</span>
+          </div>
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html" data-nav-link>Accueil</a>
+          <a href="percussion.html" data-nav-link>Percussion</a>
+          <a href="animation.html" data-nav-link>Animation</a>
+          <a href="equipe.html" data-nav-link>Equipe</a>
+          <a href="contact.html" data-nav-link class="nav-cta">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <section class="page-hero">
+        <div class="container">
+          <div class="page-hero-shell">
+            <div class="page-hero-grid">
+              <div>
+                <div class="page-eyebrow">Simulation budget</div>
+                <h1>Estimez votre <span class="accent">evenement</span></h1>
+                <p class="page-hero-subtitle">
+                  Choisissez votre type d'evenement, vos options et recevez une estimation rapide avant de contacter
+                  l'equipe.
+                </p>
+                <p class="page-hero-copy">
+                  Ce simulateur donne une fourchette indicative en MAD pour vous aider a preparer votre demande. Si
+                  l'estimation vous convient, un bouton WhatsApp vous permet d'envoyer votre selection directement.
+                </p>
+              </div>
+
+              <article class="visual-card">
+                <img
+                  src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1200&q=80"
+                  alt="Ambiance d'evenement premium"
+                />
+                <div class="visual-card-copy">
+                  <h2>Un budget clair avant le devis</h2>
+                  <p>Une premiere estimation simple pour cadrer vos envies, vos services et votre enveloppe.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section">
+        <div class="container">
+          <div class="budget-layout">
+            <form class="budget-form-card" data-budget-form>
+              <div class="section-header">
+                <div class="section-header-copy">
+                  <div class="kicker">Simulateur</div>
+                  <h2>Composez votre offre</h2>
+                  <p>Selectionnez le format de votre evenement puis ajoutez les options que vous souhaitez.</p>
+                </div>
+              </div>
+
+              <div class="form-grid">
+                <div class="field">
+                  <label for="eventType">Type d'evenement</label>
+                  <select id="eventType" name="eventType">
+                    <option value="Anniversaire" data-price="1800">Anniversaire - 1 800 MAD</option>
+                    <option value="Mariage" data-price="6500">Mariage - 6 500 MAD</option>
+                    <option value="Khatba / fiancailles" data-price="3200">Khatba / fiancailles - 3 200 MAD</option>
+                    <option value="Gender reveal" data-price="2200">Gender reveal - 2 200 MAD</option>
+                    <option value="Kermesse" data-price="2800">Kermesse - 2 800 MAD</option>
+                    <option value="Journee speciale ecole" data-price="3500">Journee speciale ecole - 3 500 MAD</option>
+                    <option value="Soiree privee" data-price="3000">Soiree privee - 3 000 MAD</option>
+                    <option value="Diner gala" data-price="5000">Diner gala - 5 000 MAD</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="guestRange">Nombre d'invites</label>
+                  <select id="guestRange" name="guestRange">
+                    <option value="Jusqu'a 50 invites" data-price="0">Jusqu'a 50 invites - 0 MAD</option>
+                    <option value="50 a 120 invites" data-price="700">50 a 120 invites - 700 MAD</option>
+                    <option value="120 a 250 invites" data-price="1500">120 a 250 invites - 1 500 MAD</option>
+                    <option value="Plus de 250 invites" data-price="2800">Plus de 250 invites - 2 800 MAD</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="duration">Duree de prestation</label>
+                  <select id="duration" name="duration">
+                    <option value="Formule courte (2h)" data-price="0">Formule courte (2h) - 0 MAD</option>
+                    <option value="Formule standard (4h)" data-price="1200">Formule standard (4h) - 1 200 MAD</option>
+                    <option value="Formule premium (6h+)" data-price="2600">Formule premium (6h+) - 2 600 MAD</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="city">Ville</label>
+                  <input id="city" name="city" type="text" placeholder="Exemple : Casablanca" />
+                </div>
+              </div>
+
+              <div class="section-label" style="margin: 26px 0 14px;">Options & services</div>
+              <div class="checkbox-grid">
+                <label class="check-option">
+                  <input type="checkbox" name="service" value="Animation micro" data-price="800" />
+                  <span><strong>Animation micro</strong><span>+800 MAD</span></span>
+                </label>
+                <label class="check-option">
+                  <input type="checkbox" name="service" value="Live band" data-price="2500" />
+                  <span><strong>Live band</strong><span>+2 500 MAD</span></span>
+                </label>
+                <label class="check-option">
+                  <input type="checkbox" name="service" value="Folklore" data-price="1800" />
+                  <span><strong>Folklore</strong><span>+1 800 MAD</span></span>
+                </label>
+                <label class="check-option">
+                  <input type="checkbox" name="service" value="Mascotte" data-price="700" />
+                  <span><strong>Mascotte</strong><span>+700 MAD</span></span>
+                </label>
+                <label class="check-option">
+                  <input type="checkbox" name="service" value="Clown" data-price="900" />
+                  <span><strong>Clown</strong><span>+900 MAD</span></span>
+                </label>
+                <label class="check-option">
+                  <input type="checkbox" name="service" value="Magicien" data-price="1200" />
+                  <span><strong>Magicien</strong><span>+1 200 MAD</span></span>
+                </label>
+                <label class="check-option">
+                  <input type="checkbox" name="service" value="Cracheur de feu" data-price="1800" />
+                  <span><strong>Cracheur de feu</strong><span>+1 800 MAD</span></span>
+                </label>
+                <label class="check-option">
+                  <input type="checkbox" name="service" value="Decoration" data-price="2200" />
+                  <span><strong>Decoration</strong><span>+2 200 MAD</span></span>
+                </label>
+                <label class="check-option">
+                  <input type="checkbox" name="service" value="Sound system" data-price="1500" />
+                  <span><strong>Sound system</strong><span>+1 500 MAD</span></span>
+                </label>
+                <label class="check-option">
+                  <input type="checkbox" name="service" value="Eclairage" data-price="1200" />
+                  <span><strong>Eclairage</strong><span>+1 200 MAD</span></span>
+                </label>
+                <label class="check-option">
+                  <input type="checkbox" name="service" value="Percussion live" data-price="2000" />
+                  <span><strong>Percussion live</strong><span>+2 000 MAD</span></span>
+                </label>
+              </div>
+            </form>
+
+            <aside class="budget-summary-card">
+              <div class="estimate-label">Estimation actuelle</div>
+              <div class="price-total" data-budget-total>1 800 MAD</div>
+              <p class="estimate-note">
+                Estimation indicative hors contraintes techniques specifiques, transport exceptionnel ou demandes
+                sur-mesure.
+              </p>
+
+              <ul class="summary-list" data-budget-summary>
+                <li><span>Anniversaire</span><span>1 800 MAD</span></li>
+              </ul>
+
+              <div class="button-row">
+                <a
+                  class="btn btn-primary"
+                  href="https://wa.me/212612828842"
+                  target="_blank"
+                  rel="noopener"
+                  data-budget-whatsapp
+                >
+                  Contacter avec cette estimation
+                </a>
+                <a class="btn btn-ghost" href="contact.html">Parler a l'equipe</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <a
+      class="floating-whatsapp"
+      href="https://wa.me/212612828842"
+      target="_blank"
+      rel="noopener"
+      aria-label="Contacter Paloma Roja sur WhatsApp"
+    >
+      WA
+    </a>
+
+    <footer>
+      <div class="container">&copy; 2026 Paloma Roja &mdash; L'art de la percussion. Powered by Paloma Animation.</div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
