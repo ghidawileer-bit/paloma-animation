@@ -400,6 +400,10 @@ h1 {
   filter: saturate(0.92) contrast(1.04);
 }
 
+.visual-card.team-shot img {
+  object-position: center top;
+}
+
 .hero-main-overlay,
 .visual-card-copy {
   position: absolute;
